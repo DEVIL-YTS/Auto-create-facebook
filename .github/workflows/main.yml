@@ -1,0 +1,17 @@
+name: Run Command
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run a command
+        run: |
+          echo "Hello, World!" # Yahan aap apna command daal sakte hain
